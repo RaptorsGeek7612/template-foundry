@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- GitHub issue templates (bug report, feature request).
+- `SECURITY.md`.
+- License badge in the README.
+- A `Coverage` step in CI (`forge coverage`).
+
 ### Changed
 
 - CI now only triggers on `master` (dropped the unused `main` branch trigger, kept for parity with the sibling Hardhat template).

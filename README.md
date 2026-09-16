@@ -1,5 +1,7 @@
 # Voting (Foundry)
 
+[![CI](https://github.com/RaptorsGeek7612/template-foundry/actions/workflows/ci.yml/badge.svg)](https://github.com/RaptorsGeek7612/template-foundry/actions/workflows/ci.yml)
+
 A whitelisted on-chain voting system built with Foundry and OpenZeppelin's `Ownable`.
 
 The `Voting` contract drives voters through a fixed workflow:

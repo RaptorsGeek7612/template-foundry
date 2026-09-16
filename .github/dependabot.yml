@@ -1,11 +1,11 @@
 version: 2
 updates:
-  - package-ecosystem: "gitsubmodule"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-
+  # Note: "gitsubmodule" is deliberately not tracked here. Dependabot has no
+  # concept of a tagged release for git submodules — it only ever proposes
+  # "bump to the latest commit on the tracked branch", which conflicts with
+  # `foundry.lock` pinning our dependencies (forge-std, openzeppelin-contracts)
+  # to specific release tags via `forge install <dep>@<tag>`. Bump those
+  # manually with `forge install <dep>@<new-tag>` when a new release ships.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

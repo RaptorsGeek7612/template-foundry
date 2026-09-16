@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Bumped CI actions: `actions/checkout` v4→v7, `codecov/codecov-action` v4→v6.
+- Removed the `gitsubmodule` ecosystem from `.github/dependabot.yml`. It has no concept of a tagged release for submodules — it only proposes "bump to the latest commit on the tracked branch", which conflicts with `foundry.lock` pinning `forge-std`/`openzeppelin-contracts` to specific release tags. Bump those manually with `forge install <dep>@<new-tag>` instead.
+
 ### Added
 
 - `CODE_OF_CONDUCT.md` (Contributor Covenant 2.1).

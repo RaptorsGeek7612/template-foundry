@@ -98,6 +98,8 @@ cast wallet import deployer --interactive
 forge script script/Voting.s.sol --rpc-url sepolia --account deployer --broadcast --verify
 ```
 
+See [examples/README.md](examples/README.md#to-sepolia) for a full worked example, including expected output.
+
 ### Interacting with a deployed contract
 
 ```shell

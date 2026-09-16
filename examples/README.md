@@ -4,7 +4,7 @@
 
 [`script/Voting.s.sol`](../script/Voting.s.sol) deploys the contract with no constructor arguments and logs its address.
 
-Against a local Anvil node:
+### Locally (Anvil)
 
 ```shell
 anvil                                                        # in one terminal
@@ -23,7 +23,43 @@ voting: contract Voting 0x5FbDB2315678afecb367f032d93F642f64180aa3
   Voting deployed at: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 ```
 
-See the [Deploying to Sepolia](../README.md#deploying-to-sepolia) section of the main README for testnet usage.
+### To Sepolia
+
+```shell
+cp .env.example .env
+# edit .env: set SEPOLIA_RPC_URL, PRIVATE_KEY, ETHERSCAN_API_KEY
+set -a && source .env && set +a
+
+forge script script/Voting.s.sol \
+  --rpc-url sepolia \
+  --private-key $PRIVATE_KEY \
+  --broadcast \
+  --verify
+```
+
+Expected output:
+
+```
+##### sepolia
+✅  [Success] Hash: 0xabc123...def456
+Contract Address: 0x1234567890abcdef1234567890abcdef12345678
+Block: 6942069
+Paid: 0.00123456 ETH (123456 gas * 10 gwei)
+
+Starting contract verification...
+Waiting for verification result...
+Contract successfully verified
+
+Transactions saved to: broadcast/Voting.s.sol/11155111/run-latest.json
+```
+
+Look the address up at `https://sepolia.etherscan.io/address/<the address above>` — with `--verify`, the source code is already attached — or interact with it directly:
+
+```shell
+VOTING=<the deployed address>
+cast send $VOTING "addVoter(address)" $(cast wallet address --private-key $PRIVATE_KEY) --rpc-url sepolia --private-key $PRIVATE_KEY
+cast call $VOTING "workflowStatus()(uint8)" --rpc-url sepolia
+```
 
 ## Driving the full workflow with cast
 

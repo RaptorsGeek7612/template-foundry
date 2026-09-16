@@ -26,6 +26,7 @@ src/               Voting.sol
 test/              Foundry unit + fuzz tests (Voting.t.sol)
 script/            Deployment script (Voting.s.sol)
 lib/               Dependencies as git submodules (forge-std, openzeppelin-contracts)
+examples/          Walkthroughs and usage examples (see examples/README.md)
 foundry.toml
 ```
 

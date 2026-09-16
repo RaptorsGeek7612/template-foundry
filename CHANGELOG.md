@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.1.7] - 2026-09-16
+
 ### Changed
 
 - Bumped CI actions: `actions/checkout` v4→v7, `codecov/codecov-action` v4→v6.

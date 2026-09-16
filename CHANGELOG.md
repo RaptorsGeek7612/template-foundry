@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- CI now only triggers on `master` (dropped the unused `main` branch trigger, kept for parity with the sibling Hardhat template).
+
 ### Added
 
 - `examples/` directory with a README of usage walkthroughs (deployment script, `cast` interaction, tests as documentation).

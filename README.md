@@ -104,6 +104,18 @@ cast call <VOTING_ADDRESS> "workflowStatus()(uint8)" --rpc-url sepolia
 - Foundry Book — https://book.getfoundry.sh/
 - OpenZeppelin Contracts — https://docs.openzeppelin.com/contracts/5.x/
 
+## Contributing
+
+1. Fork the repo and create a branch from `master`.
+2. `git submodule update --init --recursive` (or `forge install` if `lib/` is empty)
+3. Make your changes, then run the full check before opening a PR:
+   ```shell
+   forge fmt --check
+   forge build
+   forge test
+   ```
+4. Open a pull request describing the change. CI (GitHub Actions) must pass — it runs the same fmt/build/test steps.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

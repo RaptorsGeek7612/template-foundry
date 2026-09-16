@@ -3,7 +3,10 @@
 [![CI](https://github.com/RaptorsGeek7612/template-foundry/actions/workflows/ci.yml/badge.svg)](https://github.com/RaptorsGeek7612/template-foundry/actions/workflows/ci.yml)
 [![Latest release](https://img.shields.io/github/v/release/RaptorsGeek7612/template-foundry)](https://github.com/RaptorsGeek7612/template-foundry/releases/latest)
 
-A whitelisted on-chain voting system built with Foundry and OpenZeppelin's `Ownable`.
+A whitelisted on-chain voting system built with Foundry and OpenZeppelin's `Ownable`. This is the Foundry counterpart of a pair of framework-pure starter templates implementing the same `Voting` contract:
+
+- Hardhat — https://github.com/RaptorsGeek7612/template-hardhat
+- Foundry (this repo) — https://github.com/RaptorsGeek7612/template-foundry
 
 The `Voting` contract drives voters through a fixed workflow:
 

@@ -103,3 +103,7 @@ cast call <VOTING_ADDRESS> "workflowStatus()(uint8)" --rpc-url sepolia
 
 - Foundry Book — https://book.getfoundry.sh/
 - OpenZeppelin Contracts — https://docs.openzeppelin.com/contracts/5.x/
+
+## License
+
+MIT — see [LICENSE](LICENSE).

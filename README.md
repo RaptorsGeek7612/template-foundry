@@ -1,6 +1,7 @@
 # Voting (Foundry)
 
 [![CI](https://github.com/RaptorsGeek7612/template-foundry/actions/workflows/ci.yml/badge.svg)](https://github.com/RaptorsGeek7612/template-foundry/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/RaptorsGeek7612/template-foundry)](https://github.com/RaptorsGeek7612/template-foundry/releases/latest)
 
 A whitelisted on-chain voting system built with Foundry and OpenZeppelin's `Ownable`.
 
